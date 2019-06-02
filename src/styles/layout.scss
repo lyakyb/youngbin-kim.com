@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+  a {
+    font-weight: 400;
+    color: $light-grey;
+    display: block;
+    margin-right: 1rem;
+  }
+}
+
+@include mobile {
+  .footer {
+    height: 80px;
+  }
+}
