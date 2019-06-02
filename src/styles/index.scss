@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+@import './variables.scss';
+@import './mixins.scss';
+
+@import './navigation.scss';

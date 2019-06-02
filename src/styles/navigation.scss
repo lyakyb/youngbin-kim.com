@@ -1,0 +1,93 @@
+.nav {
+  background: $lightYellow;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: all 0.5s ease;
+
+  &.scroll {
+    background-color: $lightGrey;
+  }
+
+  .nav-container {
+    padding: 0 1.5rem;
+    height: 50px;
+    max-width: $nav-width;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    transition: height 0.5s ease;
+  }
+  .home {
+    a {
+      display: flex;
+      align-items: center;
+      margin-right: 0;
+    }
+    .text {
+      display: none;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex: 1;
+    margin: 0;
+
+    a {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      padding: 1rem;
+      margin: 0;
+    }
+  }
+
+  .homeicon {
+    height:26px;
+    width:26px;
+    margin-bottom:0;
+  }
+}
+
+@include mobile {
+  .nav {
+    &.scroll {
+      .nav-container {
+        height: 50px;
+      }
+    }
+
+    .nav-container {
+      height: 90px;
+      padding: 0 1.5rem;
+    }
+
+    .home {
+      .text {
+        display: block;
+      }
+    }
+
+    .links {
+      justify-content: space-between;
+      flex: unset;
+      flex-direction: row;
+      height: 100%;
+      align-content: center;
+      a {
+        margin: 0 1.5rem;
+        padding: 1rem 0.5rem;
+      }
+    }
+
+    .homeicon {
+      margin-right: 0.5rem;
+    }
+  }
+}
