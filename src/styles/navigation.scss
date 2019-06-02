@@ -19,8 +19,8 @@
 
   .nav-container {
     padding: 0 1.5rem;
-    height: 50px;
-    max-width: $nav-width;
+    height: $nav-height-mobile;
+    max-width: $width;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -78,12 +78,12 @@
   .nav {
     &.scroll {
       .nav-container {
-        height: 50px;
+        height: $nav-height-desktop-scroll;
       }
     }
 
     .nav-container {
-      height: 90px;
+      height: $nav-height-desktop;
       padding: 0 1.5rem;
 
       a {

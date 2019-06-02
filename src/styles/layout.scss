@@ -1,3 +1,30 @@
+#content-body {
+  margin-top: $nav-height-mobile;
+  padding: 30px 0 0;
+}
+
+@include mobile {
+  #content-body {
+    margin-top: $nav-height-desktop;
+    padding: 40px 0 0;
+  }
+}
+
+.container {
+  max-width: $width;
+  padding: 0 2rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  p a {
+    font-weight:400;
+    text-decoration: none;
+    color: $grey;
+  }
+}
+
+
+/* Footer Component */
 .footer {
   display: flex;
   align-items: center;

@@ -1,4 +1,5 @@
 const config = {
+  siteTitle: 'Bin Kim',
   navLinks: [
     { name: 'Bio', link: ''},
     { name: 'Blog', link: ''},

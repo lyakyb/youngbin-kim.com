@@ -1,24 +1,33 @@
 import React from "react"
 import { Link } from "gatsby"
+import Helmet from "react-helmet"
 
-import Layout from "../components/layout"
+import Layout from "../layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-import Navigation from "../components/Navigation"
 import Config from "../data/Config"
 
 const IndexPage = () => (
   <Layout>
-  <Navigation navLinks={Config.navLinks}/>
-  <h1>Hi people</h1>
-  <p>Welcome to your new Gatsby site.</p>
-  <SEO title="Home" />
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <Helmet title={`${Config.siteTitle} | Home`} />
+    <SEO />
+    <div className="container brief">
+      <h2>Hello! I'm Bin Kim.</h2>
+      <p>Welcome to my website!</p>
+      <p>I am a student currently enrolled in Mechatronics Engineering at University of Waterloo.</p>
+      <p>This website was built to gain familiarity with react/web dev. </p>
+
+      <p>
+        {`Powered by Gatsby and Netlify, inspired by `}
+        <span>
+          <a href="https://www.taniarascia.com/">Tania Rascia</a>
+        </span>
+      </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className="container experiences">
+
+    </div>
   </Layout>
 )
 
