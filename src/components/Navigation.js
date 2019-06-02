@@ -31,7 +31,7 @@ export default class Navigation extends React.Component {
           <div className="home">
             <Link to='/'>
               <img src={home} alt='Home' className='homeicon' />
-              <span className='text'>Y.B. Kim</span>
+              <span className='text'>Bin Kim</span>
             </Link>
           </div>
           <div className="links">

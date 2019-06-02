@@ -11,9 +11,9 @@ import Config from "../data/Config"
 const IndexPage = () => (
   <Layout>
   <Navigation navLinks={Config.navLinks}/>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
+  <h1>Hi people</h1>
+  <p>Welcome to your new Gatsby site.</p>
+  <SEO title="Home" />
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
