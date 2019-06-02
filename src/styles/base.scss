@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+  font: $font-style $font-variant $font-weight #{$font-size} $font-family;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: $link-color;
+}

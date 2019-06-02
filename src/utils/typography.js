@@ -16,4 +16,4 @@ const typography = new Typography({
   bodyFontFamily: fontFamilies
 })
 
-export default Typography;
+export default typography;
