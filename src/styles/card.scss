@@ -1,0 +1,78 @@
+.card {
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
+  height: $card-height;
+  width: $card-width-mobile;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+
+  .card-header {
+    height: 40%;
+    .position {
+      display: inline-block;
+      font-weight: 400;
+      font-size: 15px;
+      border-bottom: teal solid 3px;
+    }
+
+    .company,
+    .link {
+      padding-top: 2px;
+      font-weight: 200;
+      color: darken($light-grey, 20%);
+      font-size: 14px;
+    }
+
+    .location {
+      font-weight: 100;
+      font-size: 12px;
+      color: darken($lightest-grey, 15%);
+    }
+  }
+
+  .card-body {
+    height: 40%;
+    max-width:70%;
+    .description {
+      font-size: 14px;
+      font-weight: 250;
+    }
+  }
+
+  .card-footer {
+    height: 20%;
+    padding-bottom: 5px;
+    .date {
+      position: absolute;
+      bottom: 0;
+      display: inline-block;
+      background: lighten($lightest-grey, 10%);
+      border-radius: 10px;
+      padding: 3px 7px;
+      font-size: 10px;
+      font-weight: 100;
+    }
+
+    .img {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      float: right;
+      width: 70px;
+      height: 70px;
+      img {
+        position:absolute;
+        bottom:0;
+        right:0;
+        margin:0;
+      }
+    }
+  }
+}
+
+
+@include mobile {
+  .card {
+    width: $card-width;
+  }  
+}

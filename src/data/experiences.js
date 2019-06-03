@@ -1,0 +1,52 @@
+const experiences = [
+  {
+    company: "Matrix Solutions Inc",
+    startDate: "2015-01",
+    endDate: "2015-04",
+    position: "Software Developer Intern",
+    location: "Calgary, AB, Canada",
+    term: "1A",
+    type: "coop",
+    website: "https://www.matrix-solutions.com/",
+    description: "Brief description",
+    img: 'https://www.matrix-solutions.com/wp-content/themes/matrix-solutions/images/matrix-logo.png'
+  },
+  {
+    company: "Connected Lab Inc",
+    startDate: "2015-09",
+    endDate: "2016-04",
+    position: "Software Developer Co-op",
+    location: "Toronto, ON, Canada",
+    term: "1B",
+    type: "coop",
+    website: "https://www.connected.io/",
+    description: "Brief description",
+    img: 'https://assets.website-files.com/5b48c125b9f372ed502178cc/5b48c125b9f3727b3a2178f6_nav_logo.svg'
+  },
+  {
+    company: "Korea Army Training Center",
+    startDate: "2016-08",
+    endDate: "2018-05",
+    position: "Assist Drill Sergeant",
+    location: "Nonsan, Choong-nam, South Korea",
+    term: "",
+    type: "military",
+    website: "http://www.katc.mil.kr/katc/",
+    description: "Brief description",
+    img: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Republic_of_Korea_Army_Training_Center_Insignia.png'
+  },
+  {
+    company: "Universe",
+    startDate: "2019-05",
+    endDate: "2019-08",
+    position: "Software Developer Intern - Full Stack",
+    location: "Toronto, ON, Canada",
+    term: "1B",
+    type: "coop",
+    website: "https://www.universe.com",
+    description: "Brief description",
+    img: 'https://cdn-images-1.medium.com/fit/c/200/200/1*reCJV7CR6C20UvJeNNT5fQ.png'
+  },
+]
+
+export default experiences

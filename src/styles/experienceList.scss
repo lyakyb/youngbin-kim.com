@@ -1,0 +1,19 @@
+.experience {
+  display: flex;
+  .flex-grid {
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, $card-width-mobile);
+    grid-gap: 20px;
+    grid-auto-rows: $card-height;  
+    justify-content: center;
+  }
+}
+
+@include mobile {
+  .experience {
+    .flex-grid {
+      grid-template-columns: repeat(auto-fill, $card-width);
+    }
+  }
+}

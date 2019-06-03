@@ -3,7 +3,12 @@ $mobile-width: 720px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
+/* Sizes */
 $width: 1000px;
+$card-height: 200px;
+$card-width: 30vw;
+$card-width-mobile: 80vw;
+
 /* Navbar Sizes */
 $nav-height-desktop: 90px;
 $nav-height-desktop-scroll: 50px;
@@ -14,6 +19,7 @@ $nav-height-mobile: 50px;
 /* Colors */
 $grey: #282828;
 $light-grey: #999999;
+$lightest-grey: #c1c1c1;
 $link-color: #4e4e4e;
 
 /* Body Fonts */

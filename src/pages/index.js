@@ -5,8 +5,10 @@ import Helmet from "react-helmet"
 import Layout from "../layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import ExperienceList from '../components/ExperienceList'
 
 import Config from "../data/Config"
+import experiences from "../data/experiences"
 
 const IndexPage = () => (
   <Layout>
@@ -26,7 +28,7 @@ const IndexPage = () => (
       </p>
     </div>
     <div className="container experiences">
-
+      <ExperienceList experiences={experiences} />
     </div>
   </Layout>
 )
