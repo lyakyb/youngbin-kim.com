@@ -1,78 +1,130 @@
 .card {
-  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.22);
   height: $card-height;
   width: $card-width-mobile;
   border-radius: 10px;
   padding: 10px;
   position: relative;
+  display: flex;
 
-  .card-header {
-    height: 40%;
-    .position {
-      display: inline-block;
-      font-weight: 400;
-      font-size: 15px;
-      border-bottom: teal solid 3px;
-    }
+  .card-container {
+    height: 100%;
+    width: 100%;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    position: relative;
 
-    .company,
-    .link {
-      padding-top: 2px;
-      font-weight: 200;
-      color: darken($light-grey, 20%);
-      font-size: 14px;
-    }
-
-    .location {
-      font-weight: 100;
-      font-size: 12px;
-      color: darken($lightest-grey, 15%);
-    }
-  }
-
-  .card-body {
-    height: 40%;
-    max-width:70%;
-    .description {
-      font-size: 14px;
-      font-weight: 250;
-    }
-  }
-
-  .card-footer {
-    height: 20%;
-    padding-bottom: 5px;
-    .date {
+    .card-front,
+    .card-back {
       position: absolute;
-      bottom: 0;
-      display: inline-block;
-      background: lighten($lightest-grey, 10%);
-      border-radius: 10px;
-      padding: 3px 7px;
-      font-size: 10px;
-      font-weight: 100;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
     }
 
-    .img {
-      position: absolute;
-      bottom: 5px;
-      right: 5px;
-      float: right;
-      width: 70px;
-      height: 70px;
-      img {
-        position:absolute;
-        bottom:0;
-        right:0;
-        margin:0;
+    .card-front {
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .img {
+        height: 35%;
+        width: 60%;
+        img {
+          display: block;
+          margin: 0.2rem auto auto auto;
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      .title {
+        height: 15%;
+        font-weight: 800;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+        color: darken($light_grey, 25%);
+      }
+
+      .loc-and-time {
+        height: 10%;
+        font-weight: 550;
+        font-size: 14px;
+        color: $light_grey;
+        margin: 0.4rem 0;
+      }
+
+      .tech-stack {
+        height: 30%;
+        width: 100%;
+        margin-top: 0.5rem;
+        justify-content: center;
+        display: flex;
+        img {
+          margin: 0 10px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .description {
+        width: 65%;
+        font-weight: 400;
+        font-size:80%;
+        padding: 3px;
+        
+      }
+      .divider {
+        width: 1px;
+        background: $light_grey;
+        height: 100%;
+      }
+      .tech-stack {
+        padding-left: 3px;
+        width:35%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 40px);
+        grid-gap: 20px;
+        grid-auto-rows: 40px;  
+        justify-content: center;
       }
     }
   }
 }
 
-
 @include mobile {
   .card {
-    width: $card-width;
-  }  
+    width: 100%;
+    .card-container {
+      .card-front{
+        .img {
+        }
+        .title {
+          margin: 1.5rem 0 1rem 0;
+          font-size: 1rem;
+        }
+        .loc-and-time {
+          text-align: center;
+          margin: auto;
+        }
+        .tech-stack {
+          display: none;
+        }
+      }
+    }
+  }
+  .card:focus {
+    outline: 0;
+  }
+  .card:focus .card-container,
+  .card:hover .card-container {
+    transform: rotateY(180deg);
+  }
 }

@@ -8,7 +8,7 @@ export default class ExperienceList extends React.Component {
       <div className="experience">
         <div className="flex-grid">
           {experiences.reverse().map(experience => {
-            return <Card data={experience} />
+            return <Card data={experience} key={experience.company} />
           })}
         </div>
       </div>

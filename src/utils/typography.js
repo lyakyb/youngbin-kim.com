@@ -6,7 +6,9 @@ const fontFamilies = [
   "Ubuntu",
   "Helvetica",
   "Arial",
-  "sans-serif"
+  "sans-serif",
+  "Orbitron",
+  "Open Sans"
 ]; 
 
 const typography = new Typography({

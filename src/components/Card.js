@@ -1,25 +1,36 @@
 import React from "react"
+import { ImageForFileName } from "../helpers/imageProvider"
 
 export default class Card extends React.Component {
+
   render() {
-    const { data } = this.props
+    const { img, position, startDate, endDate, location, techStack, description } = this.props.data
+    const techStacks = techStack.map(tech => {
+      const img = ImageForFileName(tech)
+      return <img src={ImageForFileName(tech)} key={tech} />
+    });
 
     return (
       <div className="card">
-        <div className="card-header">
-          <div className="position">{data.position.toUpperCase()}</div>
-          <div className="company link">
-            {data.company ? data.company : data.link}
+        <div className="card-container">
+          <div className="card-front">
+            <div className="img">
+              <img src={img} />
+            </div>
+            <div className="title">{position}</div>
+            <div className="loc-and-time">{`${startDate} - ${endDate}`}<br/>{location}</div>
+            <div className="tech-stack">
+              {techStacks}
+            </div>
           </div>
-          <div className="location">{data.location}</div>
-        </div>
-        <div className="card-body">
-          <div className="description">{data.description}</div>
-        </div>
-        <div className="card-footer">
-          <div className="date">{`${data.startDate} - ${data.endDate}`}</div>
-          <div className="img">
-            <img src={data.img} />
+          <div className="card-back">
+            <div className="description">
+              {description}
+            </div>
+            <div className="divider"/>
+            <div className="tech-stack">
+              {techStacks}
+            </div>
           </div>
         </div>
       </div>
