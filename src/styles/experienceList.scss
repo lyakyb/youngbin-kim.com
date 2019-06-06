@@ -13,7 +13,7 @@
 @include mobile {
   .experience {
     .flex-grid {
-      grid-template-columns: repeat(auto-fill, $card-width);
+      grid-template-columns: repeat(auto-fill, 40%);
     }
   }
 }

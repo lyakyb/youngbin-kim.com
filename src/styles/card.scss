@@ -1,6 +1,3 @@
-// TODO: make the flipping animation only work on desktop. i.e. put all the logic under @include
-//       for mobile, keep the old design
-
 .card {
   box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.22);
   height: $card-height;
@@ -45,8 +42,8 @@
 
       .title {
         height: 15%;
-        font-weight: 600;
-        font-size: 15px;
+        font-weight: 800;
+        font-size: 0.8rem;
         margin-top: 1rem;
         color: darken($light_grey, 25%);
         // border-bottom: teal solid 1px;
@@ -54,7 +51,7 @@
 
       .duration {
         height: 10%;
-        font-weight: 250;
+        font-weight: 550;
         font-size: 14px;
         color: $light_grey;
         margin: 0.4rem 0;
@@ -86,7 +83,7 @@
 
 @include mobile {
   .card {
-    width: $card-width;
+    width: 100%;
     .card-container {
       .card-front{
         .img {
@@ -94,6 +91,7 @@
         }
         .title {
           margin: 1rem 0;
+          font-size: 1rem;
         }
         .duration {
           margin: 0.5rem 0;
