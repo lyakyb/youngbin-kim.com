@@ -1,26 +1,24 @@
 import React from "react"
+import { ImageForFileName } from "../helpers/imageProvider"
 
 export default class Card extends React.Component {
   render() {
-    const { data } = this.props
-
+    const { img, position, startDate, endDate, techStack } = this.props.data
     return (
       <div className="card">
-        <div className="card-header">
-          <div className="position">{data.position.toUpperCase()}</div>
-          <div className="company link">
-            {data.company ? data.company : data.link}
-          </div>
-          <div className="location">{data.location}</div>
+        <div className="img">
+          <img src={img} />
         </div>
-        <div className="card-body">
-          <div className="description">{data.description}</div>
-        </div>
-        <div className="card-footer">
-          <div className="date">{`${data.startDate} - ${data.endDate}`}</div>
-          <div className="img">
-            <img src={data.img} />
-          </div>
+
+        <div className="title">{position}</div>
+
+        <div className="duration">{`${startDate} - ${endDate}`}</div>
+
+        <div className="tech-stack">
+          {techStack.map(tech => {
+            const img = ImageForFileName(tech)
+            return <img src={ImageForFileName(tech)} key={tech} />
+          })}
         </div>
       </div>
     )

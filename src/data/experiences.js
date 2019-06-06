@@ -9,7 +9,8 @@ const experiences = [
     type: "coop",
     website: "https://www.matrix-solutions.com/",
     description: "Brief description",
-    img: 'https://www.matrix-solutions.com/wp-content/themes/matrix-solutions/images/matrix-logo.png'
+    img: 'https://www.matrix-solutions.com/wp-content/themes/matrix-solutions/images/matrix-logo.png',
+    techStack: ['csharp', 'dotnet', 'mysql']
   },
   {
     company: "Connected Lab Inc",
@@ -21,7 +22,8 @@ const experiences = [
     type: "coop",
     website: "https://www.connected.io/",
     description: "Brief description",
-    img: 'https://assets.website-files.com/5b48c125b9f372ed502178cc/5b48c125b9f3727b3a2178f6_nav_logo.svg'
+    img: 'https://assets.website-files.com/5b48c125b9f372ed502178cc/5b48c125b9f3727b3a2178f6_nav_logo.svg',
+    techStack: ['objective-c', 'javascript']
   },
   {
     company: "Korea Army Training Center",
@@ -33,7 +35,8 @@ const experiences = [
     type: "military",
     website: "http://www.katc.mil.kr/katc/",
     description: "Brief description",
-    img: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Republic_of_Korea_Army_Training_Center_Insignia.png'
+    img: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Republic_of_Korea_Army_Training_Center_Insignia.png',
+    techStack: ['gasmask', 'rifle', 'helmet', 'grenade']
   },
   {
     company: "Universe",
@@ -45,7 +48,8 @@ const experiences = [
     type: "coop",
     website: "https://www.universe.com",
     description: "Brief description",
-    img: 'https://cdn-images-1.medium.com/fit/c/200/200/1*reCJV7CR6C20UvJeNNT5fQ.png'
+    img: 'https://cdn-images-1.medium.com/fit/c/200/200/1*reCJV7CR6C20UvJeNNT5fQ.png',
+    techStack: ['rubyonrails', 'coffeescript', 'react', 'graphql', 'mongodb', 'ember']
   },
 ]
 
