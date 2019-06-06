@@ -31,12 +31,10 @@
         height: 35%;
         width: 60%;
         img {
-          padding-bottom: 5px;
-          // border-bottom: $light_grey solid 1px;
           display: block;
+          margin: 0.2rem auto auto auto;
           height: 100%;
           width: auto;
-          margin: auto;
         }
       }
 
@@ -46,10 +44,9 @@
         font-size: 0.8rem;
         margin-top: 1rem;
         color: darken($light_grey, 25%);
-        // border-bottom: teal solid 1px;
       }
 
-      .duration {
+      .loc-and-time {
         height: 10%;
         font-weight: 550;
         font-size: 14px;
@@ -77,6 +74,27 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      .description {
+        width: 65%;
+        font-weight: 400;
+        font-size:80%;
+        padding: 3px;
+        
+      }
+      .divider {
+        width: 1px;
+        background: $light_grey;
+        height: 100%;
+      }
+      .tech-stack {
+        padding-left: 3px;
+        width:35%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 40px);
+        grid-gap: 20px;
+        grid-auto-rows: 40px;  
+        justify-content: center;
+      }
     }
   }
 }
@@ -87,14 +105,14 @@
     .card-container {
       .card-front{
         .img {
-          margin: 0.5rem 0;
         }
         .title {
-          margin: 1rem 0;
+          margin: 1.5rem 0 1rem 0;
           font-size: 1rem;
         }
-        .duration {
-          margin: 0.5rem 0;
+        .loc-and-time {
+          text-align: center;
+          margin: auto;
         }
         .tech-stack {
           display: none;

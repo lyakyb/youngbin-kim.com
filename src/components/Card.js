@@ -4,7 +4,7 @@ import { ImageForFileName } from "../helpers/imageProvider"
 export default class Card extends React.Component {
 
   render() {
-    const { img, position, startDate, endDate, techStack, description } = this.props.data
+    const { img, position, startDate, endDate, location, techStack, description } = this.props.data
     const techStacks = techStack.map(tech => {
       const img = ImageForFileName(tech)
       return <img src={ImageForFileName(tech)} key={tech} />
@@ -18,7 +18,7 @@ export default class Card extends React.Component {
               <img src={img} />
             </div>
             <div className="title">{position}</div>
-            <div className="duration">{`${startDate} - ${endDate}`}</div>
+            <div className="loc-and-time">{`${startDate} - ${endDate}`}<br/>{location}</div>
             <div className="tech-stack">
               {techStacks}
             </div>
@@ -27,7 +27,9 @@ export default class Card extends React.Component {
             <div className="description">
               {description}
             </div>
+            <div className="divider"/>
             <div className="tech-stack">
+              {techStacks}
             </div>
           </div>
         </div>

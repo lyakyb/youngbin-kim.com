@@ -10,7 +10,8 @@ const experiences = [
     website: "https://www.matrix-solutions.com/",
     description: "Brief description",
     img: 'https://www.matrix-solutions.com/wp-content/themes/matrix-solutions/images/matrix-logo.png',
-    techStack: ['csharp', 'dotnet', 'mysql']
+    techStack: ['csharp', 'dotnet', 'mysql'],
+    description: 'Developed .NET WPF apps with MySQL as database under Test Drive Development. CI/CD through TeamCity.'
   },
   {
     company: "Connected Lab Inc",
@@ -23,7 +24,8 @@ const experiences = [
     website: "https://www.connected.io/",
     description: "Brief description",
     img: 'https://assets.website-files.com/5b48c125b9f372ed502178cc/5b48c125b9f3727b3a2178f6_nav_logo.svg',
-    techStack: ['objective-c', 'javascript']
+    techStack: ['objective-c', 'javascript'],
+    description: 'Developed tvOS/iOS companion app communicating over Bluetooth Low Energy(BLE). Worked on a number of R&Ds such as evaluating Xamarin, React Native and working with Amazon Alexa voice recognition.'
   },
   {
     company: "Korea Army Training Center",
@@ -36,7 +38,8 @@ const experiences = [
     website: "http://www.katc.mil.kr/katc/",
     description: "Brief description",
     img: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Republic_of_Korea_Army_Training_Center_Insignia.png',
-    techStack: ['gasmask', 'rifle', 'helmet', 'grenade']
+    techStack: ['gasmask', 'rifle', 'helmet', 'grenade'],
+    description: 'Educated more than 2,000 soldiers from all over the country with their basic training over the course of my service.'
   },
   {
     company: "Universe",
@@ -49,7 +52,8 @@ const experiences = [
     website: "https://www.universe.com",
     description: "Brief description",
     img: 'https://cdn-images-1.medium.com/fit/c/200/200/1*reCJV7CR6C20UvJeNNT5fQ.png',
-    techStack: ['rubyonrails', 'coffeescript', 'react', 'graphql', 'mongodb', 'ember']
+    techStack: ['rubyonrails', 'coffeescript', 'react', 'graphql', 'mongodb', 'ember'],
+    description: 'Fullstack web developer.'
   },
 ]
 
