@@ -6,50 +6,86 @@
   padding: 10px;
   position: relative;
   display: flex;
-  align-items: center;
-  flex-direction: column;
 
-  .img {
-    height: 35%;
-    width: 60%;
-    img {
-      padding-bottom: 5px;
-      border-bottom: $light_grey solid 1px;
-      display: block;
-      height: 100%;
-      width: auto;
-      margin: auto;
-    }
-  }
-
-  .title {
-    height: 15%;
-    font-weight: 600;
-    font-size: 15px;
-    padding-top: 7px;
-    color: darken($light_grey, 25%);
-    border-bottom: teal solid 1px;
-  }
-
-  .duration {
-    height: 10%;
-    font-weight: 250;
-    font-size: 14px;
-    color: $light_grey;
-    margin: 3px 0;
-  }
-
-  .tech-stack {
-    height: 30%;
+  .card-container {
+    height: 100%;
     width: 100%;
-    margin-top: 15px;
-    justify-content: space-between;
-    display:flex;
-    img {
-      width:45px;
-      height:45px;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    position: relative;
+
+    .card-front,
+    .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .card-front {
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .img {
+        height: 35%;
+        width: 60%;
+        img {
+          padding-bottom: 5px;
+          // border-bottom: $light_grey solid 1px;
+          display: block;
+          height: 100%;
+          width: auto;
+          margin: auto;
+        }
+      }
+
+      .title {
+        height: 15%;
+        font-weight: 600;
+        font-size: 15px;
+        margin-top: 1rem;
+        color: darken($light_grey, 25%);
+        // border-bottom: teal solid 1px;
+      }
+
+      .duration {
+        height: 10%;
+        font-weight: 250;
+        font-size: 14px;
+        color: $light_grey;
+        margin: 0.4rem 0;
+      }
+
+      .tech-stack {
+        height: 30%;
+        width: 100%;
+        margin-top: 0.5rem;
+        justify-content: center;
+        display: flex;
+        img {
+          margin: 0 10px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .card-back {
+      transform: rotateY(180deg);
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
+}
+.card:focus {
+  outline: 0;
+}
+.card:focus .card-container,
+.card:hover .card-container{
+  transform: rotateY(180deg);
 }
 
 @include mobile {

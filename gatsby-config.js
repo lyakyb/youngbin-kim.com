@@ -33,6 +33,14 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       }
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Droid Sans', 'Droid Serif', 'Orbitron', 'Raleway']
+        }
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
