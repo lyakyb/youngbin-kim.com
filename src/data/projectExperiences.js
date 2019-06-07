@@ -11,7 +11,7 @@ const projectExperiences = [
     name: "Reminderer",
     type: "Personal",
     link: 'https://www.github.com/lyakyb/Reminderer',
-    description: "An iOS app designed to help people with indecisiveness",
+    description: "A .NET WPF app with repeating alarm and timer features",
     techStack: ['dotnet', 'csharp'],
     language: 'csharp'
   },

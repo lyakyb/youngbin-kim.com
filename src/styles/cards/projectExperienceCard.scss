@@ -1,55 +1,81 @@
 .project-card {
   box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.22);
-  height: $project-card-height;
+  height: $project-card-height-mobile;
   width: 100%;
   border-radius: 10px;
-  padding: 10px;
+  padding: 0.2rem;
   position: relative;
   display: flex;
+  float: left;
   transition: transform 0.4s;
   transform-style: preserve-3d;
+  align-items: center;
+
+  .github {
+    max-height: 100%;
+    width: 10%;
+    justify-content: center;
+    display: flex;
+    img {
+      width: 20vh;
+      margin:auto;
+    }
+  }
 
   .title {
-    height: 15%;
+    padding: 10px;
+    width: 30%;
     font-weight: 800;
-    font-size: 0.8rem;
-    margin-top: 1rem;
+    font-size: 0.6rem;
+    text-align:center;
     color: darken($light_grey, 25%);
   }
 
   .description {
-    height: 10%;
+    padding: 10px;
+    width: 40%;
     font-weight: 550;
-    font-size: 14px;
+    font-size: 0.5rem;
     color: $light_grey;
     margin: 0.4rem 0;
+    text-align: center;
   }
 
   .tech-stack {
-    height: 30%;
-    width: 100%;
-    margin-top: 0.5rem;
+    padding-left: 0.1rem;
+    width: 20%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 5vh);
+    grid-gap: 20px;
+    grid-auto-rows: 5vh;
     justify-content: center;
-    display: flex;
-    img {
-      margin: 0 10px;
-      width: 30px;
-      height: 30px;
-    }
   }
-  // .tech-stack {
-  //   padding-left: 3px;
-  //   width: 35%;
-  //   display: grid;
-  //   grid-template-columns: repeat(auto-fill, 40px);
-  //   grid-gap: 20px;
-  //   grid-auto-rows: 40px;
-  //   justify-content: center;
-  // }
 }
 
 @include mobile {
   .project-card {
     width: 100%;
+    height: $project-card-height;
+
+    .github {
+      width: 5%;
+      img {
+        width: 5vh;
+        margin:auto;
+      }
+    }
+    .title {
+      width: 20%;
+      font-size: 0.7rem;
+      text-align:left;
+    }
+    .description {
+      width: 50%;
+      font-size: 0.7rem;
+      text-align: left;
+    }
+    .tech-stack {
+      width: 35%;
+    }
   }
 }

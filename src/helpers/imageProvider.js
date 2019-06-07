@@ -16,6 +16,7 @@ import helmet from "../images/helmet.png"
 import gatsby from "../images/gatsby.png"
 import ios from "../images/ios.png"
 import netlify from '../images/netlify.png'
+import github from '../images/github.png'
 
 export const ImageForFileName = fileName => {
   switch (fileName) {
@@ -55,6 +56,8 @@ export const ImageForFileName = fileName => {
       return netlify
     case "ios":
       return ios
+    case 'github':
+      return github
     default:
       return ""
   }
