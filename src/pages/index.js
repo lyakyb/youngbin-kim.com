@@ -8,14 +8,15 @@ import SEO from "../components/seo"
 import ExperienceList from '../components/ExperienceList'
 
 import Config from "../data/Config"
-import experiences from "../data/experiences"
+import workExperiences from "../data/workExperiences"
+import projectExperiences from "../data/projectExperiences"
 
 const IndexPage = () => (
   <Layout>
     <Helmet title={`${Config.siteTitle} | Home`} />
     <SEO />
     <div className="container brief">
-      <h2>Hello! I'm Bin Kim.</h2>
+      <h1>Hello! I'm Bin Kim.</h1>
       <p>Welcome to my website!</p>
       <p>I am a student currently enrolled in Mechatronics Engineering at University of Waterloo.</p>
       <p>This website was built to gain familiarity with react/web dev. </p>
@@ -28,7 +29,8 @@ const IndexPage = () => (
       </p>
     </div>
     <div className="container experiences">
-      <ExperienceList experiences={experiences} />
+      <h2>Experiences</h2>
+      <ExperienceList workExperiences={workExperiences} projectExperiences={projectExperiences} />
     </div>
   </Layout>
 )

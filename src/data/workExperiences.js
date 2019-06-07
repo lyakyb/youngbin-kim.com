@@ -1,4 +1,4 @@
-const experiences = [
+const workExperiences = [
   {
     company: "Matrix Solutions Inc",
     startDate: "2015-01",
@@ -57,4 +57,4 @@ const experiences = [
   },
 ]
 
-export default experiences
+export default workExperiences

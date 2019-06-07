@@ -1,0 +1,55 @@
+.project-card {
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.22);
+  height: $project-card-height;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  transition: transform 0.4s;
+  transform-style: preserve-3d;
+
+  .title {
+    height: 15%;
+    font-weight: 800;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: darken($light_grey, 25%);
+  }
+
+  .description {
+    height: 10%;
+    font-weight: 550;
+    font-size: 14px;
+    color: $light_grey;
+    margin: 0.4rem 0;
+  }
+
+  .tech-stack {
+    height: 30%;
+    width: 100%;
+    margin-top: 0.5rem;
+    justify-content: center;
+    display: flex;
+    img {
+      margin: 0 10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  // .tech-stack {
+  //   padding-left: 3px;
+  //   width: 35%;
+  //   display: grid;
+  //   grid-template-columns: repeat(auto-fill, 40px);
+  //   grid-gap: 20px;
+  //   grid-auto-rows: 40px;
+  //   justify-content: center;
+  // }
+}
+
+@include mobile {
+  .project-card {
+    width: 100%;
+  }
+}

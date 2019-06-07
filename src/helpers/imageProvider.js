@@ -13,6 +13,9 @@ import rifle from "../images/rifle.png"
 import gasmask from "../images/gasmask.png"
 import grenade from "../images/grenade.png"
 import helmet from "../images/helmet.png"
+import gatsby from "../images/gatsby.png"
+import ios from "../images/ios.png"
+import netlify from '../images/netlify.png'
 
 export const ImageForFileName = fileName => {
   switch (fileName) {
@@ -46,6 +49,12 @@ export const ImageForFileName = fileName => {
       return gasmask
     case "helmet":
       return helmet
+    case "gatsby":
+      return gatsby
+    case "netlify":
+      return netlify
+    case "ios":
+      return ios
     default:
       return ""
   }

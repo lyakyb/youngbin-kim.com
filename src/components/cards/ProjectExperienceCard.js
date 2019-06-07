@@ -1,0 +1,23 @@
+import React from "react"
+import { ImageForFileName } from "../../helpers/imageProvider"
+
+export default class ProjectExperienceCard extends React.Component {
+  render() {
+    const { name, description, techStack, type, link } = this.props.data
+    const techStacks = techStack.map(tech => {
+      return <img src={ImageForFileName(tech)} key={tech} />
+    })
+
+    return (
+      <div className="project-card">
+        <div className="title">
+          <a href={link} target="_blank">
+            {name}
+          </a>
+        </div>
+        <div className="description">{description}</div>
+        <div className="tech-stack">{techStacks}</div>
+      </div>
+    )
+  }
+}

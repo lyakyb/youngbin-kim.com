@@ -1,19 +1,18 @@
 import React from "react"
-import { ImageForFileName } from "../helpers/imageProvider"
+import { ImageForFileName } from "../../helpers/imageProvider"
 
-export default class Card extends React.Component {
+export default class WorkExperienceCard extends React.Component {
 
   render() {
     const { img, position, startDate, endDate, location, techStack, description } = this.props.data
     const techStacks = techStack.map(tech => {
-      const img = ImageForFileName(tech)
       return <img src={ImageForFileName(tech)} key={tech} />
     });
 
     return (
-      <div className="card">
-        <div className="card-container">
-          <div className="card-front">
+      <div className="work-card">
+        <div className="work-card-container">
+          <div className="work-card-front">
             <div className="img">
               <img src={img} />
             </div>
@@ -23,7 +22,7 @@ export default class Card extends React.Component {
               {techStacks}
             </div>
           </div>
-          <div className="card-back">
+          <div className="work-card-back">
             <div className="description">
               {description}
             </div>

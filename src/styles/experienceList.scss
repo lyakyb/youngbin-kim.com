@@ -1,6 +1,6 @@
 .experience {
-  display: flex;
-  .flex-grid {
+  display: block;
+  .work-flex-grid {
     width: 100%;
     display:grid;
     grid-template-columns: repeat(auto-fill, $card-width-mobile);
@@ -8,11 +8,25 @@
     grid-auto-rows: $card-height;  
     justify-content: center;
   }
+
+  .divider {
+    margin: 2rem auto;
+    background: $light_grey;
+    width: 100%;
+    height: 1px;
+  }
+
+  .project-flex-grid {
+    width: 100%;
+    display:grid;
+    grid-template-rows: repeat($project-card-height, 100%);
+    grid-gap: 1rem;
+  }
 }
 
 @include mobile {
   .experience {
-    .flex-grid {
+    .work-flex-grid {
       grid-template-columns: repeat(auto-fill, 40%);
     }
   }
