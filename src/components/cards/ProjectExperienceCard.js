@@ -2,9 +2,10 @@ import React from "react"
 import { ImageForFileName } from "../../helpers/imageProvider"
 
 export default class ProjectExperienceCard extends React.Component {
+  
   render() {
     const { name, description, link, language, techStack, icon } = this.props.data
-    const techStacks = techStack.reverse().map(tech => {
+    const techStacks = techStack.map(tech => {
       return <img src={ImageForFileName(tech)} key={tech} />
     })
 

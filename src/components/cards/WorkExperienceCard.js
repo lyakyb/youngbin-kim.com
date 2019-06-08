@@ -2,7 +2,6 @@ import React from "react"
 import { ImageForFileName } from "../../helpers/imageProvider"
 
 export default class WorkExperienceCard extends React.Component {
-
   render() {
     const { img, position, startDate, endDate, location, techStack, description } = this.props.data
     const techStacks = techStack.map(tech => {

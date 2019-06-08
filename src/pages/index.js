@@ -8,8 +8,6 @@ import SEO from "../components/seo"
 import ExperienceList from '../components/ExperienceList'
 
 import Config from "../data/Config"
-import workExperiences from "../data/workExperiences"
-import projectExperiences from "../data/projectExperiences"
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +16,7 @@ const IndexPage = () => (
     <div className="container brief">
       <h1>Hello! I'm Bin Kim.</h1>
       <p>Welcome to my website!</p>
-      <p>I am a student currently enrolled in Mechatronics Engineering at University of Waterloo.</p>
+      <p>I am currently studying Mechatronics Engineering at University of Waterloo.</p>
       <p>This website was built to gain familiarity with react/web dev. </p>
 
       <p>
@@ -30,7 +28,7 @@ const IndexPage = () => (
     </div>
     <div className="container experiences">
       <h2>Experiences</h2>
-      <ExperienceList workExperiences={workExperiences} projectExperiences={projectExperiences} />
+      <ExperienceList />
     </div>
   </Layout>
 )
