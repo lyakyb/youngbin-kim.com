@@ -24,7 +24,7 @@
 
   .title {
     padding: 10px;
-    width: 30%;
+    width: 20%;
     font-weight: 800;
     font-size: 0.6rem;
     text-align:center;
@@ -43,7 +43,7 @@
 
   .tech-stack {
     padding: 0 0.1rem;
-    width: 20%;
+    width: 30%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 5vh);
     grid-gap: 20px;
@@ -73,12 +73,12 @@
       text-align:left;
     }
     .description {
-      width: 50%;
+      width: 45%;
       font-size: 0.7rem;
       text-align: left;
     }
     .tech-stack {
-      width: 25%;
+      width: 30%;
     }
   }
 }
