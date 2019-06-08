@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import home from '../images/home-icon.png'
+import { ImageForFileName } from "../helpers/imageProvider"
 
 import "../styles/index.scss"
 
@@ -24,13 +24,12 @@ export default class Navigation extends React.Component {
   render() {
     const { scrolled } = this.state
     const { navLinks } = this.props
-
     return (
       <nav className={scrolled ? "nav scroll" : "nav"}>
         <div className="nav-container">
           <div className="home">
             <Link to='/'>
-              <img src={home} alt='Home' className='homeicon' />
+              <img src={scrolled ? ImageForFileName('bluesteak') : ImageForFileName('redsteak')} alt='Home' className='homeicon' />
               <span className='text'>Bin Kim</span>
             </Link>
           </div>

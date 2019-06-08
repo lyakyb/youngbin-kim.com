@@ -15,10 +15,13 @@ import grenade from "../images/grenade.png"
 import helmet from "../images/helmet.png"
 import gatsby from "../images/gatsby.png"
 import ios from "../images/ios.png"
-import netlify from '../images/netlify.png'
-import github from '../images/github.png'
-import simbotics from '../images/simbotics.png'
-import java from '../images/java.png'
+import netlify from "../images/netlify.png"
+import github from "../images/github.png"
+import simbotics from "../images/simbotics.png"
+import java from "../images/java.png"
+import ez8 from "../images/ez8.png"
+import bluesteak from "../images/steak-blue.png"
+import redsteak from "../images/steak-red.png"
 
 export const ImageForFileName = fileName => {
   switch (fileName) {
@@ -58,12 +61,18 @@ export const ImageForFileName = fileName => {
       return netlify
     case "ios":
       return ios
-    case 'github':
+    case "github":
       return github
-    case 'simbotics':
+    case "simbotics":
       return simbotics
-    case 'java':
+    case "java":
       return java
+    case "ez8":
+      return ez8
+    case "redsteak":
+      return redsteak
+    case "bluesteak":
+      return bluesteak
     default:
       return ""
   }
