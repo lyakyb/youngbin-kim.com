@@ -3,14 +3,14 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
 import SEO from '../components/SEO'
-import TimeLine from '../components/TimeLine'
+import TimeLine from '../components/Timeline'
 
 
 export default class PageTemplate extends React.Component {
   render() {
     const { slug } = this.props.pageContext
     const post = this.props.data.markdownRemark
-    
+
     return (
       <Layout>
         <Helmet title="LOL"/>

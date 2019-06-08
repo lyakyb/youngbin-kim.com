@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
 import SEO from '../components/SEO'
-import TimeLine from '../components/TimeLine'
+import Timeline from '../components/Timeline'
 
 
 export default class BioPage extends React.Component {
@@ -15,7 +15,7 @@ export default class BioPage extends React.Component {
         <SEO />
         <div className="container">
           <div className="page" dangerouslySetInnerHTML={{ __html: post.html }} />
-          <TimeLine />
+          <Timeline />
         </div>
       </Layout>
     )
