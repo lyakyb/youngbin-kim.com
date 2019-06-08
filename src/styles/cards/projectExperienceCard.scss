@@ -56,7 +56,7 @@
   .project-card {
     width: 100%;
     height: $project-card-height;
-
+    transition: all 0.5s ease;
     .github {
       width: 5%;
       img {
@@ -78,4 +78,9 @@
       width: 35%;
     }
   }
+}
+
+.project-card:hover,
+.project-card:focus {
+  transform: translateY(-15%);
 }
