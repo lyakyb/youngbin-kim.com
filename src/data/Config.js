@@ -1,7 +1,7 @@
 const config = {
   siteTitle: 'Bin Kim',
   navLinks: [
-    { name: 'Bio', link: ''},
+    { name: 'Bio', link: '/bio/'},
     { name: 'Blog', link: ''},
     { name: 'Projects', link: ''},
     { name: 'Contact', link: ''},
