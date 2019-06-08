@@ -1,11 +1,20 @@
 const projectExperiences = [
   {
+    name: "Simbotics",
+    type: "Extracurricular",
+    link: 'https://www.simbotics.org',
+    description: "Programming student/mentor of a highschool robotics team",
+    techStack: ['java'],
+    language: 'java',
+    icon: 'simbotics'
+  },
+  {
     name: "HelpYouDecide",
     type: "Personal",
     link: 'https://www.github.com/lyakyb/HelpYouDecide',
     description: "An iOS app designed to help people with indecisiveness",
     techStack: ['objective-c', 'ios'],
-    language: 'objective-c'
+    language: 'objective-c',
   },
   {
     name: "Reminderer",

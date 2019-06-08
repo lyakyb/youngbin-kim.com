@@ -42,13 +42,16 @@
   }
 
   .tech-stack {
-    padding-left: 0.1rem;
+    padding: 0 0.1rem;
     width: 20%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 5vh);
     grid-gap: 20px;
     grid-auto-rows: 5vh;
     justify-content: center;
+    img {
+      height: 100%;
+    }
   }
 }
 
@@ -75,7 +78,7 @@
       text-align: left;
     }
     .tech-stack {
-      width: 35%;
+      width: 25%;
     }
   }
 }
