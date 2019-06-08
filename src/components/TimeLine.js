@@ -2,9 +2,8 @@ import React from 'react'
 import timelineData from '../data/timelineData'
 import TimelineItem from './TimelineItem'
 
-export default class TimeLine extends React.Component {
+export default class Timeline extends React.Component {
   state = {
-    lineHeight: 0,
     timelineItems: []
   }
   
@@ -16,10 +15,6 @@ export default class TimeLine extends React.Component {
     })
   }
 
-
-  // vertical Line, circles on the line, circles have the date (YYYY-MM || YYYY)
-  // circle size = * imp
-  // hover on the circles reveal description and an image 
   render() {
     return (
       <div className="timeline">

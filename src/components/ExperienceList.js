@@ -4,7 +4,6 @@ import ProjectExperienceCard from './cards/ProjectExperienceCard'
 import workData from "../data/workExperiences"
 import projectData from "../data/projectExperiences"
 
-
 class ExperienceList extends React.Component {
   state = {
     workExperiences: [],

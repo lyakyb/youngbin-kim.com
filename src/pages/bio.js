@@ -15,6 +15,7 @@ export default class BioPage extends React.Component {
         <SEO />
         <div className="container">
           <div className="page" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <h2 className="timeline-header">Timeline (for the giggles)</h2>
           <Timeline />
         </div>
       </Layout>
