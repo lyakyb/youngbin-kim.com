@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
-import SEO from '../components/SEO'
+import SEO from '../components/seo'
 import Timeline from '../components/Timeline'
 
 
