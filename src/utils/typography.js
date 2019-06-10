@@ -1,21 +1,25 @@
-import Typography from 'typography'
+import Typography from "typography"
 
 const fontFamilies = [
   "Raleway",
   "Roboto",
-  "Ubuntu",
   "Helvetica",
   "Arial",
   "sans-serif",
-  "Orbitron",
-  "Open Sans"
-]; 
+  "Open Sans",
+]
 
 const typography = new Typography({
   baseFontSize: "18px",
   baseLineHeight: 1.666,
   headerFontFamily: fontFamilies,
-  bodyFontFamily: fontFamilies
+  bodyFontFamily: fontFamilies,
+  googleFonts: [
+    {
+      name: "Raleway",
+      styles: ["300", "400", "500", "600", "700", "800"],
+    },
+  ],
 })
 
-export default typography;
+export default typography

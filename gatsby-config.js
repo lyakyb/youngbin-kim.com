@@ -34,14 +34,14 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       }
     },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Droid Sans', 'Droid Serif', 'Orbitron', 'Raleway']
-        }
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-web-font-loader',
+    //   options: {
+    //     google: {
+    //       families: ['Droid Sans', 'Droid Serif', 'Orbitron']
+    //     }
+    //   }
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
