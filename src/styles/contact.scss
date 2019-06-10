@@ -1,0 +1,67 @@
+.contact {
+  width: 100%;
+  height: 80vh;
+  form {
+    width: 100%;
+    display: flex;
+    float: left;
+    label {
+      width: 30%;
+      margin: auto;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+    input {
+      width: 70%;
+      border: lighten($light_grey, 15%) solid 1px;
+      border-radius: 0.3rem;
+    }
+  }
+  button {
+    position: relative;
+    right: 0;
+  }
+  textarea {
+    width: 70%;
+    border: lighten($light_grey, 15%) solid 1px;
+    border-radius: 0.3rem;
+  }
+  .submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+      border-radius: 0.3rem;
+      width: 20%;
+      height: 45px;
+      transition: all 0.5s;
+      background: white;
+      color: black;
+    }
+    button:focus,
+    button:hover {
+      text-decoration: none;
+      background: teal;
+      color: white;
+      outline: none;
+    }
+  }
+}
+
+@include mobile {
+  .contact {
+    form {
+      label {
+        width: 10%;
+        margin: auto;
+        font-weight: 800;
+      }
+      input {
+        width: 90%;
+      }
+      textarea {
+        width: 90%;
+      }
+    }
+  }
+}
