@@ -18,7 +18,6 @@ export default class WorkExperienceCard extends React.Component {
     })
 
     return (
-      <Fade bottom>
         <div className="work-card">
           <div className="work-card-container">
             <div className="work-card-front">
@@ -40,7 +39,6 @@ export default class WorkExperienceCard extends React.Component {
             </div>
           </div>
         </div>
-      </Fade>
     )
   }
 }

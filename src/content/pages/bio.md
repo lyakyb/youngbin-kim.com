@@ -26,18 +26,28 @@ I'm 23 and I'm from South Korea. I like computer science. Always interested to l
   * Horizon Zero Dawn
 
 ###Education
-  * **Highschool:** Governor Simcoe Secondary School
-  * **University:** B.ASc, Mechatronics Engieering Honours, Coop, University of Waterloo\Expected graduation 2023
+####Highschool 
+  * Governor Simcoe Secondary School, Grade 11 - 12
+  * Canadian International School Vietnam (HCMC), Grade 9 - 10
+  
+####University 
+  * B.ASc, Mechatronics Engieering Honours, Coop, University of Waterloo
+      * Engineering International Student Award, 2014
+      * _Expected graduation 2023_
+      <br/><br/><br/>
 
+***
 ###Technical Skills
 ####Languages
-- Javascript (ES6, Coffeescript), Ruby, Objective-c, Java, C++
+  - Javascript (ES6, Coffeescript), Ruby, Objective-c, Java, C++
 
 ####Frameworks
-- Ruby on Rails, Ember, React, iOS, tvOS, WPF
+  - Ruby on Rails, Ember, React, iOS, tvOS, WPF
 
 ####Databases
-- MySQL, MongoDB
+  - MySQL, MongoDB
 
 ####Others
-- Google Cloud Build
+  - Google Cloud Build<br/><br/>
+  
+***
