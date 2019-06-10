@@ -40,15 +40,15 @@
 
       .title {
         height: 15%;
-        font-weight: 800;
-        font-size: 0.8rem;
+        font-weight: 500;
+        font-size: 80%;
         margin-top: 1rem;
         color: darken($light_grey, 25%);
       }
 
       .loc-and-time {
         height: 10%;
-        font-weight: 550;
+        font-weight: 350;
         font-size: 14px;
         color: $light_grey;
         margin: 0.4rem 0;
@@ -106,8 +106,6 @@
     width: 100%;
     .work-card-container {
       .work-card-front{
-        .img {
-        }
         .title {
           margin: 1.5rem 0 1rem 0;
           font-size: 1rem;
