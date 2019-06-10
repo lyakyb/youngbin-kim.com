@@ -11,14 +11,13 @@ import Config from "../data/Config"
 
 const IndexPage = () => (
   <Layout>
-    <Helmet title={`${Config.siteTitle} | Home`} />
+    <Helmet title={`Home | ${Config.siteTitle}`}/>
     <SEO />
     <div className="container brief">
       <h1>Hello! I'm Bin Kim.</h1>
       <p>Welcome to my website!</p>
       <p>I am currently studying Mechatronics Engineering at University of Waterloo.</p>
       <p>This website was built to gain familiarity with react/web dev. </p>
-
       <p>
         {`Powered by Gatsby and Netlify, inspired by `}
         <span>

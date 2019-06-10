@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../layout'
 import SEO from '../components/seo'
 import Timeline from '../components/Timeline'
+import Config from '../data/Config'
 
 
 export default class BioPage extends React.Component {
@@ -11,8 +12,8 @@ export default class BioPage extends React.Component {
     const post = this.props.data.markdownRemark
     return (
       <Layout>
-        <Helmet title="LOL"/>
-        <SEO />
+        <Helmet title={`Bio | ${Config.siteTitle}`} />
+        <SEO title=""/>
         <div className="container">
           <div className="page" dangerouslySetInnerHTML={{ __html: post.html }} />
           <h2 className="timeline-header">Timeline (for the giggles)</h2>

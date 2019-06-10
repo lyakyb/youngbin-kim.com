@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
 import SEO from '../components/SEO'
-import TimeLine from '../components/Timeline'
+import Config from '../data/Config'
 
 
 export default class PageTemplate extends React.Component {
@@ -13,7 +13,7 @@ export default class PageTemplate extends React.Component {
 
     return (
       <Layout>
-        <Helmet title="LOL"/>
+        <Helmet title={`${post.frontmatter.title} | ${Config.siteTitle}`}/>
         <SEO />
         <div className="container">
           <div className="page" dangerouslySetInnerHTML={{ __html: post.html }} />
