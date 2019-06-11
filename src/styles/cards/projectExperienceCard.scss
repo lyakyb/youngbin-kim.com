@@ -81,8 +81,11 @@
       grid-template-columns: repeat(5, 5vmin);
       grid-gap: 20px;
       justify-content: space-between;
+      margin-right: 1em;
       img {
-        height: 100%;
+        width: 80%;
+        height: auto;
+        margin-bottom: 0;
       }
     }
   }

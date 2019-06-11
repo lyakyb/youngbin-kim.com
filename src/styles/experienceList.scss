@@ -19,7 +19,7 @@
   .project-flex-grid {
     width: 100%;
     display:grid;
-    grid-template-rows: repeat($project-card-height, 100%);
+    grid-template-rows: repeat(auto-fill);
     grid-gap: 1rem;
   }
 }
