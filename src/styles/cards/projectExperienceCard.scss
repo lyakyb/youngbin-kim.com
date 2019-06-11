@@ -7,8 +7,6 @@
   position: relative;
   display: flex;
   float: left;
-  transition: transform 0.4s;
-  transform-style: preserve-3d;
   align-items: center;
   height: 50px;
 
@@ -53,7 +51,6 @@
   .project-card {
     width: 100%;
     height: $project-card-height;
-    transition: all 0.5s ease;
     min-height: 100px;
     .github {
       width: 5%;
