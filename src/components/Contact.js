@@ -5,35 +5,46 @@ export default class Contact extends React.Component {
     name: "",
     subject: "",
     body: "",
+    isLoading: false,
+    buttonText: "Send"
   }
 
+
   onNameChanged = e => {
-    console.log(e.target.value)
     this.setState({ name: e.target.value })
   }
   onSubjectChanged = e => {
-    console.log(e.target.value)
     this.setState({ subject: e.target.value })
   }
   onBodyChanged = e => {
-    console.log(e.target.value)
     this.setState({ body: e.target.value })
   }
 
   onSubmit = e => {
     e.preventDefault()
+    this.setState({ isLoading: true })
 
-    
-
-
-    window.location.reload()
-
-    // send email
-    // spinner 
-    // change text to successful 
+    window.setTimeout(() => {
+      this.setState({ isLoading: false, buttonText: "Sent!" })
+      window.location.reload()
+    }, 3000)
   }
 
   render() {
+    let button
+    if (this.state.isLoading) {
+      button = <div className="loader">Loading...</div>
+    } else {
+      button = (
+        <button
+          text="Send"
+          onClick={this.onSubmit}
+        >
+          {this.state.buttonText}
+        </button>
+      )
+    }
+
     return (
       <div className="contact">
         <form>
@@ -65,9 +76,7 @@ export default class Contact extends React.Component {
           />
         </form>
         <div className="submit">
-          <button text="Send" onClick={this.onSubmit}>
-            Send
-          </button>
+          <div className={this.state.isLoading ? 'button loading' : 'button'}>{button}</div>
         </div>
       </div>
     )
