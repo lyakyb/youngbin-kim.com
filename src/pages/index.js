@@ -32,6 +32,7 @@ const IndexPage = () => (
     </div>
     <div className="container clips">
       <h2>Clips</h2>
+      <div className="horizontal-line"/>
       <Clips/>
     </div>
 
