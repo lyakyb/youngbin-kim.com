@@ -23,6 +23,7 @@
     "react-helmet": "^5.2.1",
     "react-reveal": "^1.2.2",
     "react-typography": "^0.16.19",
+    "react-youtube": "^7.9.0",
     "typography": "^0.16.19"
   },
   "devDependencies": {
