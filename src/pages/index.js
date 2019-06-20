@@ -6,6 +6,7 @@ import Layout from "../layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import ExperienceList from '../components/ExperienceList'
+import Clips from '../components/Clips'
 
 import Config from "../data/Config"
 
@@ -29,6 +30,12 @@ const IndexPage = () => (
       <h2>Experiences</h2>
       <ExperienceList />
     </div>
+    <div className="container clips">
+      <h2>Clips</h2>
+      <div className="horizontal-line"/>
+      <Clips/>
+    </div>
+
   </Layout>
 )
 

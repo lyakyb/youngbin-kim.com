@@ -46,3 +46,14 @@ ul {
     }
   }
 }
+
+button {
+  width: 100%;
+  height:100%;
+  border-radius: 0.3rem;
+  transition: all 0.5s;
+  background: white;
+  color: black;
+  border: $light_grey solid 1px;
+}
+
