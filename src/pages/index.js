@@ -32,7 +32,7 @@ const IndexPage = () => (
     </div>
     <div className="container clips">
       <h2>Clips</h2>
-      <div className="horizontal-line"/>
+      <p>These are some CSGO clips I recorded back when I used to play.</p>
       <Clips/>
     </div>
 

@@ -37,7 +37,7 @@ export default class Clips extends React.Component {
   render() {
     if (this.state.showClips) {
       return (
-        <div className="youtube">
+        <div className="youtube block">
           <YoutubePlayer vidIds={this.state.vidIds} />
         </div>
       )
