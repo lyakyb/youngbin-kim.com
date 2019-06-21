@@ -9,7 +9,7 @@ export default class YoutubePlayer extends React.Component {
     }
   }
   onReady = e => {
-    e.target.cuePlaylist(this.state.vidIds, 0, 0, 'hd720')
+    e.target.cuePlaylist(this.state.vidIds, 0, 0, 'large')
   }
 
   render() {
