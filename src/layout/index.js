@@ -11,11 +11,13 @@ import { isChrome } from "../helpers/deviceDetector"
 
 export default class DefaultLayout extends React.Component {
   state = {
-    showWarning: isChrome
+    shouldShow: !localStorage["acknolwedged"] && !isChrome
   }
 
   handleAcknowledge = () => {
-    this.setState({showWarning: false})
+    if (localStorage["acknolwedged"]) return
+    localStorage["acknolwedged"] = true
+    this.setState({shouldShow: false})
   }
 
   render() {
@@ -25,7 +27,11 @@ export default class DefaultLayout extends React.Component {
     return (
       <>
         <Helmet />
-        <WarningModal message={warningMessage} isOpen={this.state.showWarning} onButtonClick={() => this.handleAcknowledge()}/>
+        <WarningModal
+          message={warningMessage}
+          isOpen={this.state.shouldShow}
+          onButtonClick={() => this.handleAcknowledge()}
+        />
         <Navigation navLinks={config.navLinks} />
         <main id="content-body">{children}</main>
         <Footer />
