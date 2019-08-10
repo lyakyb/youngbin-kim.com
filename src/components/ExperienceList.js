@@ -6,12 +6,20 @@ import projectData from "../data/projectExperiences"
 
 class ExperienceList extends React.Component {
   state = {
-    workExperiences: workData.map(workExperience => {
+    workExperiences: [],
+    projectExperiences: []
+  }
+
+  componentDidMount() {
+    const workExperiences = workData.map(workExperience => {
       return <WorkExperienceCard data={workExperience} key={workExperience.company} />
-    }).reverse(),
-    projectExperiences: projectData.map(projectExperience => {
+    })
+    const projectExperiences = projectData.map(projectExperience => {
       return <ProjectExperienceCard data={projectExperience} key={projectExperience.name} />
-    }).reverse()
+    })
+    this.setState({
+      workExperiences, projectExperiences
+    })
   }
 
   render() {
