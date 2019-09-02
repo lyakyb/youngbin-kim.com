@@ -1,5 +1,4 @@
 import React from "react"
-import Helmet from "react-helmet"
 import clipData from "../data/clipData"
 import YoutubePlayer from "./YoutubePlayer"
 

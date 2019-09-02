@@ -10,7 +10,7 @@ export default class Timeline extends React.Component {
   componentDidMount() {
     this.setState({
       timelineItems: timelineData.map((data, index) => {
-        return <TimelineItem data={data} toggled={false} toLeft={!(index % 2 == 0)} key={index}/>
+        return <TimelineItem data={data} toggled={false} toLeft={!(index % 2 === 0)} key={index}/>
       })
     })
   }
