@@ -133,6 +133,7 @@
   }
   .work-card:focus .work-card-container,
   .work-card:hover .work-card-container {
+    cursor: pointer;
     transform: rotateY(180deg);
   }
 }
