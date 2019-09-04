@@ -13,7 +13,7 @@ const workExperiences = [
     description: 'Developed .NET WPF apps with MySQL as database under Test Drive Development. CI/CD through TeamCity.'
   },
   {
-    company: "Connected Lab Inc",
+    company: "Connected Lab",
     startDate: "2015-09",
     endDate: "2016-04",
     position: "Software Developer Co-op",
