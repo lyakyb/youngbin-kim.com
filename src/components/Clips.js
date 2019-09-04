@@ -34,17 +34,10 @@ export default class Clips extends React.Component {
   }
 
   render() {
-    if (this.state.showClips) {
-      return (
-        <div className="youtube block">
-          <YoutubePlayer vidIds={this.state.vidIds} />
-        </div>
-      )
-    }
-
     return (
-      <div className="youtube">
-        <button onClick={() => this.loadClips()}>Load Clips</button>
+      <div className="youtube block">
+        <p>These are some of the clips I took when I used to play</p>
+        <YoutubePlayer vidIds={this.state.vidIds} />
       </div>
     )
   }
