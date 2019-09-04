@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
         <a href="https://www.github.com/lyakyb" target="_blank">
           Github
         </a>
-        <a href="" target="_blank">
+        <a href="https://www.linkedin.com/in/young-bin-kim-418b8ba3/" target="_blank">
           LinkedIn
         </a>
       </footer>

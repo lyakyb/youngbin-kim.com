@@ -16,12 +16,6 @@ const IndexPage = () => (
       <p>Welcome to my website!</p>
       <p>I am currently studying Mechatronics Engineering at University of Waterloo.</p>
       <p>This website was built to gain familiarity with react/web dev. </p>
-      <p>
-        {`Powered by Gatsby and Netlify, inspired by `}
-        <span>
-          <a href="https://www.taniarascia.com/">Tania Rascia</a>
-        </span>
-      </p>
     </div>
     <div className="container experiences">
       <h2>Experiences</h2>
