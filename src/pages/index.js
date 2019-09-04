@@ -1,12 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
 import Helmet from "react-helmet"
 
 import Layout from "../layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import ExperienceList from '../components/ExperienceList'
-import Clips from '../components/Clips'
 
 import Config from "../data/Config"
 

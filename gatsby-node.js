@@ -3,17 +3,17 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  let slug;
+  let slug
   if (node.internal.type === `MarkdownRemark`) {
     const fileNode = getNode(node.parent)
     console.log(fileNode)
     console.log(path.parse(fileNode.relativePath))
-    slug = createFilePath({ node, getNode, basePath: `markdowns`})
+    slug = createFilePath({ node, getNode, basePath: `markdowns` })
     console.log(slug)
     createNodeField({
       node,
-      name: 'slug',
-      value: slug
+      name: "slug",
+      value: slug,
     })
   }
 }
@@ -22,7 +22,10 @@ exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const pageTemplate = path.resolve('src/templates/pageTemplate.js')
+    const pageTemplate = path.resolve("src/templates/pageTemplate.js")
+    const experienceTemplate = path.resolve(
+      "src/templates/experienceTemplate.js"
+    )
 
     resolve(
       graphql(
@@ -34,6 +37,7 @@ exports.createPages = ({ actions, graphql }) => {
                   frontmatter {
                     template
                     title
+                    name
                   }
                   fields {
                     slug
@@ -48,16 +52,26 @@ exports.createPages = ({ actions, graphql }) => {
           reject(result.errors)
         }
         result.data.allMarkdownRemark.edges.forEach(edge => {
-          if (edge.node.frontmatter.template === 'page') {
+          if (edge.node.frontmatter.template === "page") {
             createPage({
               path: edge.node.fields.slug,
               component: pageTemplate,
               context: {
-                slug: edge.node.fields.slug
-              }
+                slug: edge.node.fields.slug,
+              },
             })
           }
-        });
+
+          if (edge.node.frontmatter.template === "experience") {
+            createPage({
+              path: edge.node.fields.slug,
+              component: experienceTemplate,
+              context: {
+                slug: edge.node.fields.slug,
+              },
+            })
+          }
+        })
       })
     )
   })

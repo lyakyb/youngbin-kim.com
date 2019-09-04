@@ -17,12 +17,31 @@
   margin-right: auto;
   line-height: 20px;
   p a {
-    font-weight:400;
+    font-weight: 400;
     text-decoration: none;
     color: $grey;
   }
   .timeline-header {
     display: none;
+  }
+
+  .header {
+    font-weight: 600;
+    font-size: 1.8em;
+  }
+
+  .subheader {
+    margin-top: 0.5em;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: lighten($grey, 20%);
+
+    .time {
+      margin-top: 0.2em;
+      font-size: 1em;
+      font-weight: 300;
+      color: lighten($grey, 40%);
+    }
   }
 }
 
@@ -31,7 +50,6 @@
     display: block;
   }
 }
-
 
 /* Footer Component */
 .footer {
