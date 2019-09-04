@@ -13,7 +13,7 @@ class ExperienceList extends React.Component {
   componentDidMount() {
     const workExperiences = workData.map(workExperience => {
       return <WorkExperienceCard data={workExperience} key={workExperience.company} />
-    })
+    }).reverse()
     const projectExperiences = projectData.map(projectExperience => {
       return <ProjectExperienceCard data={projectExperience} key={projectExperience.name} />
     })
