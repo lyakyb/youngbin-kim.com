@@ -11,12 +11,16 @@ import { isChrome } from "../helpers/deviceDetector"
 
 export default class DefaultLayout extends React.Component {
   state = {
-    shouldShow: typeof window !== 'undefined' && !window.localStorage["acknolwedged"] && !isChrome
+    shouldShow: false,
+  }
+
+  componentDidMount() {
+    this.setState({ shouldShow: localStorage["acknolwedged"] && !isChrome })
   }
 
   handleAcknowledge = () => {
     localStorage["acknolwedged"] = true
-    this.setState({shouldShow: false})
+    this.setState({ shouldShow: false })
   }
 
   render() {
