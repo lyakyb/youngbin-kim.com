@@ -15,7 +15,7 @@ export default class DefaultLayout extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ shouldShow: window.localStorage["acknolwedged"] && !isChrome })
+    this.setState({ shouldShow: !window.localStorage["acknolwedged"] && !isChrome })
   }
 
   handleAcknowledge = () => {
