@@ -15,7 +15,6 @@ export default class DefaultLayout extends React.Component {
   }
 
   handleAcknowledge = () => {
-    if (localStorage["acknolwedged"]) return
     localStorage["acknolwedged"] = true
     this.setState({shouldShow: false})
   }
@@ -23,7 +22,7 @@ export default class DefaultLayout extends React.Component {
   render() {
     const { children } = this.props
     const warningMessage =
-      "Oops! This website is best optimized for Chrome/Firefox. \nYou may experience/observe weird behaviors if you are on a different browser/mobile."
+      "Oops! This website is best optimized for Chrome/Firefox on Desktop. \nYou may experience/observe weird behaviors if you are on a different browser/mobile."
     return (
       <>
         <Helmet />
