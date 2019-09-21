@@ -23,8 +23,11 @@ exports.createPages = ({ actions, graphql }) => {
 
   return new Promise((resolve, reject) => {
     const pageTemplate = path.resolve("src/templates/pageTemplate.js")
-    const experienceTemplate = path.resolve(
-      "src/templates/experienceTemplate.js"
+    const workExperienceTemplate = path.resolve(
+      "src/templates/workExperienceTemplate.js"
+    )
+    const projectExperienceTemplate = path.resolve(
+      "src/templates/projectExperienceTemplate.js"
     )
 
     resolve(
@@ -62,10 +65,20 @@ exports.createPages = ({ actions, graphql }) => {
             })
           }
 
-          if (edge.node.frontmatter.template === "experience") {
+          if (edge.node.frontmatter.template === "workExperience") {
             createPage({
               path: edge.node.fields.slug,
-              component: experienceTemplate,
+              component: workExperienceTemplate,
+              context: {
+                slug: edge.node.fields.slug,
+              },
+            })
+          }
+
+          if (edge.node.frontmatter.template === "projectExperience") {
+            createPage({
+              path: edge.node.fields.slug,
+              component: projectExperienceTemplate,
               context: {
                 slug: edge.node.fields.slug,
               },

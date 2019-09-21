@@ -44,6 +44,6 @@ export default class WorkExperienceCard extends React.Component {
 
   handleCardClick = company => {
     const slug = company.replace(/ /g,"_").toLowerCase()
-    window.location.href = `/experience/${slug}`
+    window.location.href = `/experiences/${slug}`
   }
 }

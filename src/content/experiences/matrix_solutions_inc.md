@@ -2,7 +2,7 @@
 title: 'Matrix Solutions Inc'
 name: 'Matrix Solutions Inc'
 slug: 'matrix_solutions_inc'
-template: 'experience'
+template: 'workExperience'
 ---
 #### What I did
 Worked as a software developer intern in a dev team of 6. Main job was to develop and maintain Windows applications for internal use of the company. Applications were developed in C#, .NET WPF framework. 

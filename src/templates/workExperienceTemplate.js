@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Config from "../data/Config"
 import workExperiences from "../data/workExperiences"
 
-export default class ExperienceTemplate extends React.Component {
+export default class WorkExperienceTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const experience = workExperiences.find(
@@ -36,8 +36,8 @@ export default class ExperienceTemplate extends React.Component {
 }
 
 /* eslint no-undef: "off" */
-export const experienceQuery = graphql`
-  query ExpeirenceBySlug($slug: String!) {
+export const workExperienceQuery = graphql`
+  query WorkExpeirenceBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

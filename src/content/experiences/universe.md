@@ -2,7 +2,7 @@
 title: 'Universe'
 name: 'Universe'
 slug: 'universe'
-template: 'experience'
+template: 'workExperience'
 ---
 #### What I did
 Initial work began with fixing small low impact bugs on production to gain familiarity with all the projects. 
