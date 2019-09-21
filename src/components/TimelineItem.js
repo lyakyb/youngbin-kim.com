@@ -1,5 +1,6 @@
 import React from "react"
 import { Fade } from "react-reveal"
+import { isMobile } from "react-device-detect"
 
 export default class TimelineItem extends React.Component {
   details = () => {
@@ -15,7 +16,7 @@ export default class TimelineItem extends React.Component {
 
     const date = month ? `${year}. ${month}` : `${year}`
 
-    if (toLeft) {
+    if (isMobile || toLeft) {
       return (
         <Fade bottom>
           <div className={toLeft ? "desc-left" : "desc-right"}>
@@ -26,15 +27,17 @@ export default class TimelineItem extends React.Component {
           </div>
         </Fade>
       )
+    } else {
+      return (
+        <Fade bottom>
+          <div className={toLeft ? "timelineitem left" : "timelineitem right"}>
+            {date}
+          </div>
+          <div className={toLeft ? "desc-left" : "desc-right"}>
+            {description}
+          </div>
+        </Fade>
+      )
     }
-
-    return (
-      <Fade bottom>
-        <div className={toLeft ? "timelineitem left" : "timelineitem right"}>
-          {date}
-        </div>
-        <div className={toLeft ? "desc-left" : "desc-right"}>{description}</div>
-      </Fade>
-    )
   }
 }
