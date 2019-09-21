@@ -9,9 +9,20 @@ import projects from "../data/projectExperiences"
 export default class ProjectExperienceTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const experience = projects.find(
-      exp => exp.name === post.frontmatter.name
-    )
+    const experience = projects.find(exp => exp.name === post.frontmatter.name)
+
+    if (!experience) {
+      return (
+        <Layout>
+          <Helmet title={`Awkward... | ${Config.siteTitle}`} />
+          <SEO title="" />
+          <div className="container">
+            <p>Looks like I didn't update either my data or markdown files.....</p>
+            <p>My apologies :P</p>
+          </div>
+        </Layout>
+      )
+    }
 
     const { name } = experience
 

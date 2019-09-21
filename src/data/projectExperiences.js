@@ -32,6 +32,14 @@ const projectExperiences = [
     techStack: ['gatsby', 'netlify', 'react', 'javascript'],
     language: 'javascript'
   },
+  {
+    name: "Plzstop",
+    type: "Personal",
+    link: 'https://www.github.com/lyakyb/plzstop',
+    description: "Productivity Chrome Extension",
+    techStack: ['HTML', 'CSS', 'javascript'],
+    language: 'javascript'
+  },
 ]
 
 export default projectExperiences
