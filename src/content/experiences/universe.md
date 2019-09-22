@@ -15,6 +15,8 @@ As I understood our product and projects better and better, I helped out clients
 
 Also worked on implementing a new feature that got lost during co-op student transition before and only had the initial stage of the feature implemented. The feature was to allow users to generate a csv report from PostgreSQL DB to their needs (i.e. filtering) and to be emailed to the user on the days they desire. 
 
+Paired up with other developers during monthly hackathons and created a Slack bot that posts the list of all events at Budweiser Stage and RBC Echo Beach in that week, and a Github repository finder that prints out the name of the repository given a route(url). 
+
 #### Tech Stacks
 - Ruby on Rails/Sidekiq
 - Javascript(ES6)/React/ReduxSaga
@@ -22,7 +24,11 @@ Also worked on implementing a new feature that got lost during co-op student tra
 - MongoDB
 - PostgreSQL
 - GraphQL
+- Node.js
 
 #### Tools used
 - Google Cloud Build
 - Kubernetes
+- CircleCI
+- Fastly
+- Ngrok

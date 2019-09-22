@@ -11,6 +11,7 @@ const ExperiencesPage = () => (
     <Helmet title={`Experiences | ${Config.siteTitle}`}/>
     <SEO />
     <div className="container">
+      <h2>Here is a list of some experiences I had in the past</h2>
       <Experiences/>
     </div>
   </Layout>
