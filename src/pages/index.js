@@ -17,7 +17,7 @@ const IndexPage = () => (
       <p>I am currently studying Mechatronics Engineering at University of Waterloo.</p>
       <p>This website was built to gain familiarity with react/web dev. </p>
     </div>
-    <div className="container experiences">
+    <div className="container experience">
       <h2>Experiences</h2>
       <ExperienceList />
     </div>

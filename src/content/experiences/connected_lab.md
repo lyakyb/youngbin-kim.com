@@ -2,7 +2,7 @@
 title: 'Connected Lab'
 name: 'Connected Lab'
 slug: 'connected_lab'
-template: 'experience'
+template: 'workExperience'
 ---
 #### What I did
 Worked as a software developer co-op. Initially started working on an existing iOS application to gain familiarity with iOS platform. 

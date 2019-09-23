@@ -4,27 +4,34 @@ import { graphql } from "gatsby"
 import Layout from "../layout"
 import SEO from "../components/seo"
 import Config from "../data/Config"
-import workExperiences from "../data/workExperiences"
+import projects from "../data/projectExperiences"
 
-export default class ExperienceTemplate extends React.Component {
+export default class ProjectExperienceTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const experience = workExperiences.find(
-      exp => exp.company === post.frontmatter.name
-    )
+    const experience = projects.find(exp => exp.name === post.frontmatter.name)
 
-    const { startDate, endDate, position, company, techStack, location } = experience
+    if (!experience) {
+      return (
+        <Layout>
+          <Helmet title={`Awkward... | ${Config.siteTitle}`} />
+          <SEO title="" />
+          <div className="container">
+            <p>Looks like I didn't update either my data or markdown files.....</p>
+            <p>My apologies :P</p>
+          </div>
+        </Layout>
+      )
+    }
+
+    const { name } = experience
 
     return (
       <Layout>
         <Helmet title={`${post.frontmatter.name} | ${Config.siteTitle}`} />
         <SEO title="" />
         <div className="container">
-          <div className="header">{company}</div>
-          <div className="subheader">
-            {position}
-            <span className="time">{` (${startDate} ~ ${endDate}) - ${location}`}</span>
-          </div>
+          <div className="header">{name}</div>
           <div
             className="experience"
             dangerouslySetInnerHTML={{ __html: post.html }}
@@ -36,8 +43,8 @@ export default class ExperienceTemplate extends React.Component {
 }
 
 /* eslint no-undef: "off" */
-export const experienceQuery = graphql`
-  query ExpeirenceBySlug($slug: String!) {
+export const projectExperienceQuery = graphql`
+  query ProjectExpeirenceBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

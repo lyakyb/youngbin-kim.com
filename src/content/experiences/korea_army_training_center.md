@@ -2,7 +2,7 @@
 title: 'Korea Army Training Center'
 name: 'Korea Army Training Center'
 slug: 'korea_army_training_center'
-template: 'experience'
+template: 'workExperience'
 ---
 #### What I did
 Served my mandatory military duty as a South Korean for 21 months. 
