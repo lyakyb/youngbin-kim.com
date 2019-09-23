@@ -6,7 +6,7 @@ template: 'projectExperience'
 ---
 [Go to Github Repo](https://www.github.com/lyakyb/Plzstop)
 
-[Go to Chrome Webstore]()
+[Go to Chrome Webstore](https://chrome.google.com/webstore/detail/plzstop/pcnlgpkkejlhjpgkjccflaogilclodib)
 
 ## What is this?
 Plzstop is a Chrome Extension that blocks users from accessing certain websites (on user's demand lol).
