@@ -37,7 +37,7 @@ const projectExperiences = [
     type: "Personal",
     link: 'https://www.github.com/lyakyb/plzstop',
     description: "Productivity Chrome Extension",
-    techStack: ['HTML', 'CSS', 'javascript'],
+    techStack: ['javascript'],
     language: 'javascript'
   },
 ]
