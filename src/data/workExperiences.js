@@ -51,6 +51,19 @@ const workExperiences = [
     techStack: ['rubyonrails', 'coffeescript', 'react', 'graphql', 'mongodb', 'ember'],
     description: 'Fullstack web developer.'
   },
+  {
+    company: "Webveloper Inc",
+    startDate: "2020-01",
+    endDate: "Present",
+    position: "Software Developer",
+    location: "Remote",
+    term: "2A",
+    type: "coop",
+    website: "https://www.webveloper.com",
+    img: 'https://avatars2.githubusercontent.com/u/41186995?s=200&v=4',
+    techStack: ['javascript', 'react', 'node', 'k8s'],
+    description: 'Worked mostly on the front-end along with occasional back-end work'
+  },
 ]
 
 export default workExperiences

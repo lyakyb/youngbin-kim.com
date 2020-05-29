@@ -22,6 +22,8 @@ import java from "../images/java.png"
 import ez8 from "../images/ez8.png"
 import bluesteak from "../images/steak-blue.png"
 import redsteak from "../images/steak-red.png"
+import node from "../images/node.png"
+import k8s from "../images/k8s.png"
 
 export const ImageForFileName = fileName => {
   switch (fileName) {
@@ -73,6 +75,10 @@ export const ImageForFileName = fileName => {
       return redsteak
     case "bluesteak":
       return bluesteak
+    case "k8s":
+      return k8s
+    case "node":
+      return node
     default:
       return ""
   }
